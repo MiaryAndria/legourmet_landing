@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Gourmet - Produits d'Exception</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="bg-pattern" class="bg-pattern"></div>
+    <div class="page-wrapper">
+        <main class="main-section">
+            <div class="logo-container">
+                <img src="assets/logo.png" alt="Le Gourmet - Produits d'Exception" class="logo-img">
+            </div>
+            <h1 class="main-title">
+                UNE PETITE PAUSE<br>
+                GOURMANDE S'IMPOSE
+            </h1>
+            <div class="subtitle-container">
+                <p class="main-text">
+                    Notre site est actuellement en maintenance. Nous revenons très vite avec plein de douceurs !
+                </p>
+                <p class="main-text">
+                    Merci pour votre patience et votre compréhension.
+                </p>
+            </div>
+        </main>
+
+        <footer class="dark-banner">
+            <div class="banner-content">
+                <p class="contact-prompt">
+                    En attendant , n'hésitez pas à nous contacter, nous serons ravis de vous répondre.
+                </p>
+
+                <div class="banner-divider"></div>
+
+                <div class="contact-grid">
+                    <a href="https://www.instagram.com/legourmetproduitsdexception/" target="_blank"
+                        rel="noopener noreferrer" class="contact-item">
+                        <div class="icon-wrapper">
+                            <img src="assets/instagram white version.png" alt="Instagram" class="contact-icon">
+                        </div>
+                        <span class="contact-label">legourmetproduitsdexception</span>
+                    </a>
+
+                    <a href="https://www.facebook.com/legourmetproduitsdexception/?locale=fr_FR" target="_blank"
+                        rel="noopener noreferrer" class="contact-item">
+                        <div class="icon-wrapper">
+                            <img src="assets/application version white.png" alt="Facebook" class="contact-icon">
+                        </div>
+                        <span class="contact-label">Le gourmet</span>
+                    </a>
+
+                    <div class="contact-item">
+                        <div class="icon-wrapper">
+                            <img src="assets/appel version white.png" alt="Téléphone" class="contact-icon">
+                        </div>
+                        <span class="contact-label">037 05 606 11</span>
+                    </div>
+
+                    <a href="mailto:info@legourmet.mg" class="contact-item">
+                        <div class="icon-wrapper">
+                            <img src="assets/courrier white.png" alt="Email" class="contact-icon">
+                        </div>
+                        <span class="contact-label">info@legourmet.mg</span>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+        <div class="bottom-spacer"></div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const bgPattern = document.getElementById("bg-pattern");
+            const spiceImages = [
+                "Anis étoilé.png",
+                "Bâton de cannelle.png",
+                "Café.png",
+                "Clou de girofle.png",
+                "Feuille de thé.png",
+                "Fève de cacao.png",
+                "Piment.png",
+                "Poivre.png",
+                "Vanille.png"
+            ];
+
+
+            const itemsConfig = [
+                { img: "Vanille.png", left: 18, top: 15, scale: 1.4, rotate: 15 },
+                { img: "Bâton de cannelle.png", left: 8, top: 8, scale: 1.1, rotate: -20 },
+                { img: "Anis étoilé.png", left: 14, top: 32, scale: 0.9, rotate: 30 },
+                { img: "Piment.png", left: 8, top: 48, scale: 1.0, rotate: -45 },
+                { img: "Café.png", left: 6, top: 22, scale: 0.7, rotate: 10 },
+                { img: "Feuille de thé.png", left: 24, top: 28, scale: 0.8, rotate: -15 },
+
+                { img: "Vanille.png", left: 74, top: 10, scale: 1.3, rotate: -35 },
+                { img: "Bâton de cannelle.png", left: 85, top: 5, scale: 1.2, rotate: 45 },
+                { img: "Anis étoilé.png", left: 92, top: 18, scale: 0.85, rotate: 15 },
+                { img: "Fève de cacao.png", left: 82, top: 28, scale: 0.9, rotate: -25 },
+                { img: "Piment.png", left: 90, top: 38, scale: 1.1, rotate: 20 },
+                { img: "Poivre.png", left: 78, top: 22, scale: 0.75, rotate: 0 },
+                { img: "Feuille de thé.png", left: 68, top: 18, scale: 0.8, rotate: 50 },
+
+                { img: "Clou de girofle.png", left: 44, top: 22, scale: 0.65, rotate: 15 },
+                { img: "Café.png", left: 32, top: 28, scale: 0.6, rotate: -10 },
+                { img: "Anis étoilé.png", left: 34, top: 12, scale: 0.7, rotate: 40 },
+                { img: "Fève de cacao.png", left: 60, top: 14, scale: 0.75, rotate: -15 },
+                { img: "Poivre.png", left: 63, top: 30, scale: 0.55, rotate: 12 },
+                { img: "Clou de girofle.png", left: 37, top: 52, scale: 0.6, rotate: -30 },
+                { img: "Café.png", left: 66, top: 48, scale: 0.7, rotate: 25 },
+
+                { img: "Bâton de cannelle.png", left: 16, top: 55, scale: 1.05, rotate: 35 },
+                { img: "Vanille.png", left: 24, top: 62, scale: 1.2, rotate: -10 },
+                { img: "Feuille de thé.png", left: 8, top: 68, scale: 0.85, rotate: -40 },
+                { img: "Clou de girofle.png", left: 20, top: 44, scale: 0.7, rotate: 10 },
+
+                { img: "Vanille.png", left: 62, top: 58, scale: 1.35, rotate: 25 },
+                { img: "Bâton de cannelle.png", left: 76, top: 52, scale: 1.1, rotate: -30 },
+                { img: "Anis étoilé.png", left: 88, top: 58, scale: 0.95, rotate: 15 },
+                { img: "Piment.png", left: 72, top: 68, scale: 1.0, rotate: 60 },
+                { img: "Fève de cacao.png", left: 93, top: 48, scale: 0.9, rotate: -10 },
+
+
+                { img: "Feuille de thé.png", left: 6, top: 92, scale: 0.9, rotate: 20 },
+                { img: "Café.png", left: 14, top: 88, scale: 0.75, rotate: -15 },
+                { img: "Vanille.png", left: 30, top: 90, scale: 1.25, rotate: -40 },
+                { img: "Anis étoilé.png", left: 40, top: 94, scale: 0.85, rotate: 10 },
+                { img: "Bâton de cannelle.png", left: 52, top: 88, scale: 1.1, rotate: 30 },
+                { img: "Piment.png", left: 73, top: 91, scale: 0.95, rotate: -25 },
+                { img: "Vanille.png", left: 88, top: 93, scale: 1.2, rotate: 15 }
+            ];
+
+            itemsConfig.forEach(cfg => {
+                const imgEl = document.createElement("img");
+                imgEl.src = `assets/${cfg.img}`;
+                imgEl.className = "bg-spice-item";
+                imgEl.style.left = `${cfg.left}%`;
+                imgEl.style.top = `${cfg.top}%`;
+                imgEl.style.transform = `translate(-50%, -50%) scale(${cfg.scale}) rotate(${cfg.rotate}deg)`;
+                bgPattern.appendChild(imgEl);
+            });
+        });
+    </script>
+</body>
+
+</html>
